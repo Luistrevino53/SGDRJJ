@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+background: rgba(248,80,50,1);
+background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(252,143,133,1) 99%, rgba(252,143,133,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(99%, rgba(252,143,133,1)), color-stop(100%, rgba(252,143,133,1)));
+background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(252,143,133,1) 99%, rgba(252,143,133,1) 100%);
+background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(252,143,133,1) 99%, rgba(252,143,133,1) 100%);
+background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(252,143,133,1) 99%, rgba(252,143,133,1) 100%);
+background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(252,143,133,1) 99%, rgba(252,143,133,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#fc8f85', GradientType=0 );
+}
+
+div#principal{
+	width: 100%;
+	background-color: #f5f5dc;
+	background-attachment: contain;
+}
+section#banner{
+	width: 100%;
+	background-color: red;
+}
+
+header{
+	position: fixed;;
+	width: 100%;
+	height: 70px;
+	background-color: transparent;
+	-webkit-transition: background-color .5s;
+}
+nav{
+	display: table;
+	margin: auto;
+	margin-top: 15px;
+	height: 40px;
+	-webkit-transition: margin-left .5s;
+}
+
+ul{
+	display: block;
+	float: left;
+	list-style: none;
+}
+ ul li{
+ 	float: left;
+ 	margin: 10px;
+ 	padding: 2px;
+ 	font-size: 20px;
+ }
+
+ ul a{
+ 	color: black;
+ 	text-decoration: none;
+ }
+
+img#logo{
+	float: left;
+	display: block;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 150px;
+	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+
+#body{
+	width: 100%;
+	height: 500px;
+	background-color: transparent;
+}
+
+.buscador{
+	float: left;
+	margin-top: 12px;
+	margin-left: 60px;
+	display: block;
+}
+
+.buscador form{
+	float: left;
+	display: block;
+}
+
+.resultados{
+	border: 1px solid #ccc;
+	display: block;
+	margin-bottom: 30px;
+	background-color: #f5f5dc;
+	width: auto;
+	margin-left: 20%;
+	margin-right: 20%
+}
+
+.contenedorBoton{
+	display: block;
+	float: left;
+}
+
+.titulo{
+	display: block;
+}
+
+.imgperfil{
+	float: left;
+	display: block;
+	margin-right: 100px;
+	margin-left: 30px;
+}
+#prin{
+	float: 
+}
