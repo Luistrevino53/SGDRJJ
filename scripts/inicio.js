@@ -212,10 +212,10 @@ $(document).ready(function(){
 
 //Mostrar informacion de los claneros
 	$('.more').on('click','#consulclanero',function(){
-		clanero=$(this).val();
+		clanero=$(this).attr('value');
 		$.get('scripts/mostrarClanero.php',{clanero:clanero},function(resp){
-			$('.more').html(resp);
-			$('.more').dialog({
+			$('.clanero').html(resp);
+			$('.clanero').dialog({
 				width: 590,             	
 				height: 350,
             	show: "scale", 
