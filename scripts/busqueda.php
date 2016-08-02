@@ -13,6 +13,7 @@
 		die('Error: '.$conexion->error);
 	}
 	while($row=$c->fetch_array()){
-		echo '<div class="resultado">'.$row['nombre'].'</div>';
+		echo '<div class="panel panel-default">';
+		echo '<div class="panel-body" id="infoClanero" value="'.$row['id.'">'.$row['nombre'].'</div></div>';
 	}
 ?>

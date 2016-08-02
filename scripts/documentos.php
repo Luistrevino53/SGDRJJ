@@ -1,13 +1,21 @@
 <?php  
 	include 'conexion.php';
-	$query='SELECT * FROM documentos ORDER BY fecha';
+	$query='SELECT  
+				d.titulo,
+				d.ruta,
+				c.nombre, 
+				c.apellidop,
+				c.apellidom,
+				n.nombre as clan
+	FROM documentos d JOIN clanero c ON d.clanero_id = c.cum JOIN clan n ON c.clan = n.id';
 	if(!$c=$conexion->query($query)){
-		die($conexion->error);
+		echo $conexion->error;
 	}
-	while($r=$c->fetch_array()){
-		echo '<div class="resultados">';
-		echo '<h1><a href="#" class="opc" data="'.$r['id'].'">'.$r['nombre'].'</a></h1>';
-		echo '<br>'.$r['clanero'];	
-		echo '</div>';
+	echo '<button class="btn btn-info">Subir Documento</button>';
+	echo '<div class="panel panel-default">';
+	echo '<div class="panel-body">';
+	while ($r=$c->fetch_array()) {
+		echo $r['titulo'].' '.$r['nombre'];
 	}
+	echo '</div></div>';
 ?>
